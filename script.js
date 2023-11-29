@@ -257,26 +257,26 @@ var t = function(u){
 }
 console.log(t(["cat","dog","rat","cat","rat"]));
 //IIFE
-(function(u){
-  var v = [];
-  for(var iv=0;iv<u.length;iv++){
-    if(v.indexOf(u[iv]) == -1){
-      v.push(u[iv])
+(function(u1){
+  var v1 = [];
+  for(var iv1=0;iv1<u1.length;iv1++){
+    if(v1.indexOf(u1[iv1]) == -1){
+      v1.push(u1[iv1])
     }
   }
-   console.log(v);
+   console.log(v1);
 })(["cat","dog","rat","cat","rat"]);
 //Arrow function
-var t = (u)=>{
-  var v = [];
-  for(var iv=0;iv<u.length;iv++){
-    if(v.indexOf(u[iv]) == -1){
-      v.push(u[iv])
+var t2 = (u2)=>{
+  var v2 = [];
+  for(var iv2=0;iv2<u2.length;iv2++){
+    if(v2.indexOf(u2[iv2]) == -1){
+      v2.push(u2[iv2])
     }
   }
-  return v;
+  return v2;1
 }
-console.log(t(["cat","dog","rat","cat","rat"]));
+console.log(t2(["cat","dog","rat","cat","rat"]));
 
 //Rotate an array by k times
 //Anonymous function
@@ -300,7 +300,7 @@ y1 = x1.length % y1;
 (function(w){
   out = x1.slice(y1+1, x1.length);
 var count1 = out.length;
-for(var iz=0;iz<y+1;iz++){
+for(var iz=0;iz<y1+1;iz++){
   out[count1] = x1[iz];
   count1 += 1;
 }
@@ -311,7 +311,7 @@ var x2 = [1, 2, 3];
 var y2 = 3;
 y2 = x2.length % y2; 
 var z2 = (w2)=>{
-  out = x2.slice(y2+1, x.length);
+  out = x2.slice(y2+1, x2.length);
 var count2 = out.length;
 for(var iz2=0;iz2<y2+1;iz2++){
   out[count2] = x2[iz2];
